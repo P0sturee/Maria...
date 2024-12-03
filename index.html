@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Para Minha Namorada</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Arial', sans-serif;
+      background: linear-gradient(to bottom right, #ff9a9e, #fad0c4);
+      color: #fff;
+      text-align: center;
+      overflow: hidden;
+    }
+
+    .container {
+      padding: 20px;
+      animation: fadeIn 3s ease-in-out;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      margin: 20px 0;
+      animation: fadeInTitle 3s ease-in-out;
+    }
+
+    p {
+      font-size: 1.2rem;
+      margin: 20px 0;
+      line-height: 1.6;
+      animation: fadeInText 3s ease-in-out;
+    }
+
+    .heart {
+      position: relative;
+      margin: 50px auto;
+      width: 100px;
+      height: 90px;
+      animation: pulse 2s infinite;
+    }
+
+    .heart::before,
+    .heart::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      width: 100px;
+      height: 90px;
+      background: #ff6b81;
+      border-radius: 50%;
+      transform: rotate(-45deg);
+    }
+
+    .heart::after {
+      left: 50px;
+      transform: rotate(45deg);
+    }
+
+    @keyframes pulse {
+      0%, 100% {
+        transform: scale(1);
+      }
+      50% {
+        transform: scale(1.1);
+      }
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+
+    @keyframes fadeInTitle {
+      from {
+        transform: translateY(-20px);
+        opacity: 0;
+      }
+      to {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+
+    @keyframes fadeInText {
+      from {
+        transform: translateY(20px);
+        opacity: 0;
+      }
+      to {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+
+    footer {
+      position: fixed;
+      bottom: 10px;
+      width: 100%;
+      text-align: center;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="heart"></div>
+    <h1>Para Minha Amada</h1>
+    <p>
+      Meu amor, conhecer você foi uma das maiores bênçãos da minha vida.  
+      Cada momento ao seu lado é único e especial, e eu nunca me canso de admirar a pessoa incrível que você é.  
+      Quero que saiba que estarei sempre aqui, te apoiando, te amando, e construindo um futuro ao seu lado.  
+      Obrigado por ser minha inspiração e meu refúgio.  
+      Eu e você para sempre!
+    </p>
+  </div>
+  <footer>Feito com amor por você ❤️</footer>
+</body>
+</html>
